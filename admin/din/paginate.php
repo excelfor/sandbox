@@ -1,4 +1,8 @@
 <?php
+session_start();
+$hislev=  $_SESSION['id_lev'];
+/* mostra ou esconde dados consoante o nível de acesso */
+$filtro=($hislev=='99')?3:1;
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
 header('Content-type: text/html; charset=utf-8');
@@ -28,12 +32,13 @@ switch ($fase) {
    }
 
  if ($fase !='team' && $fase !='users'){
- 	  $sql="SELECT * FROM $table ORDER BY $orderfield ASC";
+ 	  $sql="SELECT * FROM $table   WHERE $table.hidden !='$filtro' ORDER BY $orderfield ASC";
  } elseif ($fase=='team') {
 	  $sql="SELECT $table.*, entities.name AS boss
 	  FROM $table
 	  LEFT JOIN entities
 	  ON $table.entity_id = entities.id
+      WHERE $table.hidden !='$filtro'
 	  ORDER BY $table.$orderfield ASC";
  } elseif ($fase=='users'){
  	 $sql="SELECT $table.*, departments.name AS departn, user_types.user_level AS nivel
@@ -42,6 +47,7 @@ switch ($fase) {
 	  ON $table.department_id = departments.id
       LEFT JOIN user_types
       ON $table.user_type = user_types.id
+      WHERE $table.hidden !='$filtro'
 	  ORDER BY departments.id ASC";
  }
 
@@ -60,6 +66,5 @@ if($rowcount==0){
 	$rows[]='niltch';
 }
  print json_encode($rows);
- mysqli_close($con);
 
 ?>
