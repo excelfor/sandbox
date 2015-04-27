@@ -46,16 +46,17 @@ $org   = $_POST['org'];
 					$nome 	= $row['name'];
 					$depart = ($row['dep_name']=='')?'-':$row['dep_name'];
 			 		$entnm 	= $row['ent_name'];
-				    $userl  = $row['type_id']-1; /* reaponta para o nível acima */
+				    $userl  = $row['type_id']; 
 					}
 				 // vai ver o nome e função above
-					if ($userl>1){
+					if ($userl>1 && $userl<99){
+						 $userup=$userl-1; /* reaponta para o nível acima */
 						 $sql="SELECT users.name AS super_n, user_types.name AS superfunc
 						 FROM users,user_types
 						 WHERE users.department_id='$dep_id'
-						 AND user_types.user_level='$userl' LIMIT 0,1";
+						 AND user_types.user_level='$userup' LIMIT 0,1";
 						 $result = mysqli_query($con,$sql) or die('Erro: ' . mysqli_error($con));
-						 echo $count = mysqli_num_rows($result);
+						 $count = mysqli_num_rows($result);
 						 	 if ($count==1){
 						 	 	while($row = $result->fetch_assoc()) {
 						 	 		$supernm	= $row['super_n'];
@@ -68,15 +69,15 @@ $org   = $_POST['org'];
 					$_SESSION['nome']= $nome;
 					$_SESSION['superv'] = $supernm.'&nbsp;('.$superf.')';
 					$_SESSION['descdep'] = $entnm.'&nbsp;-&nbsp;Área:&nbsp;'.$depart;
-					$_SESSION['id_data']=$id; // id da tabela users
-					$_SESSION['id_lev'] = $row['type_id']; // level para controlo de acessos
+					echo $_SESSION['id_data']=$id; // id da tabela users e departamento
+					$_SESSION['id_lev'] = $userl; // level para controlo de acessos
 					mysqli_close($con);
 						if ($org !='adm'){
 							 ob_flush();
 							header("Location: ../assess");
 						} else{
 							 ob_flush();
-							header("Location: ../admin/menuger");
+						 	header("Location: ../admin/menuger");
 						}
 					ob_flush();
 					exit;

@@ -3,9 +3,10 @@ session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 $user 	= $_SESSION['nome'];
-$id_reg	= $_SESSION['id_data'];
 $cp_nm	= $_SESSION['descdep'];
 $above	= $_SESSION['superv'];
+$hislev	= $_SESSION['id_lev'];
+$hisid  = $_SESSION['id_data'];
 $res=(isset($_GET['rs']))?true:false;
 ?>
 <!DOCTYPE HTML>
