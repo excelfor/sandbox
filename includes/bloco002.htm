@@ -1,0 +1,57 @@
+<!--
+| ////// Bloco de perguntas #2 ////
+-->
+<form name="MyForm" id="form0" action="#" method="Post" style="margin-top:20px">
+					<section >
+							<div class="query">
+								A pontualidade é muito importante
+							</div>
+							<ul class="multiple" id="group1" onclick="select(event,this)">
+								<li id='rp11'>concordo totalmente</li>
+								<li id='rp12'>concordo parcialmente</li>
+								<li id='rp13'>não concordo nem discordo</li>
+								<li id='rp14'>discordo parcialmente</li>
+								<li id='rp15'>discordo totalmente</li>
+						     </ul>
+						     <div style="height:60px;display:block;width:100%"></div>
+							<div class="query">
+								Os problemas no trabalho devo procurar resolvê-los sozinho
+							</div>
+							<ul class="multiple" id="group2" onclick="select(event,this)">
+								<li id='rp21'>concordo totalmente</li>
+								<li id='rp22'>concordo parcialmente</li>
+								<li id='rp23'>não concordo nem discordo</li>
+								<li id='rp24'>discordo parcialmente</li>
+								<li id='rp25'>discordo totalmente</li>
+							</ul>
+							<div style="height:60px;display:block;width:100%"></div>
+							<div class="query">
+								Um bom lider é aquele que nunca muda de ideias
+							</div>
+							<ul class="multiple" id="group3" onclick="select(event,this)">
+								<li id='rp31'>concordo totalmente</li>
+								<li id='rp32'>concordo parcialmente</li>
+								<li id='rp33'>não concordo nem discordo</li>
+								<li id='rp34'>discordo parcialmente</li>
+								<li id='rp35'>discordo totalmente</li>
+							</ul>
+							<div style="height:60px;display:block;width:100%"></div>
+							<div class="query">
+								Já alguma vez chegou atrasado a uma reunião?
+							</div>
+
+							<div class="blocobotao"  style="top:215px" id="group4" onclick="mudaCheck(this)">
+								<input id="Fgroup4" name="Fgroup4" type="hidden" value='0'>
+								<div id="rep4" class="switch desligado"></div>
+							</div>
+					</section>
+					<section>
+					  	<input type="hidden" id="Fgroup1" value='' name="Fgroup1">
+					  	<input type="hidden" id="Fgroup2" value='' name="Fgroup2">
+					  	<input type="hidden" id="Fgroup3" value='' name="Fgroup3">
+					  
+
+					</section>
+				</form>
+			<div class="button" id="b_qr002" onclick="post_data(this,true)">concluir</div>
+			<!-- pag 2 fim e fim do quetionário -->

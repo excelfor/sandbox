@@ -1,0 +1,124 @@
+<!--
+| ////// Primeiro bloco de perguntas #1 ////
+|
+| Convenções:  seletores - rp1, rp2, rp3 consoante for o número de ordem da resposta
+| se a resposta for de escolha múltipla usar rp11, rp12, rp13 (três inputs possíveis da pergunta 1)
+| os input fields dos formulários (que recebem os valores das escolhas) devem ter o prefixo F
+| e seguir a ordem das perguntas. ex: Fgroup1, Fgroup2, etc
+| o botão de submit deve ter um Id do tipo b_qr001 q significa botão do query #1 (usar três dígitos para a ordem)
+-->
+<form name="MyForm" id="form0" action="#" method="Post" style="margin-top:20px">
+					<section >
+							<div class="query">
+								É importante para si comer um pastel de nata todos os dias?
+							</div>
+							<ul class="multiple" id="group1" onclick="select(event,this)">
+								<li id='rp11'>concordo totalmente</li>
+								<li id='rp12'>concordo parcialmente</li>
+								<li id='rp13'>não concordo nem discordo</li>
+								<li id='rp14'>discordo parcialmente</li>
+								<li id='rp15'>discordo totalmente</li>
+						     </ul>
+						     <div style="height:60px;display:block;width:100%"></div>
+							<div class="query">
+								O gelo é composto exclusivamente por cristais de água no estado sólido?
+							</div>
+							<ul class="multiple" id="group2" onclick="select(event,this)">
+								<li id='rp21'>concordo totalmente</li>
+								<li id='rp22'>concordo parcialmente</li>
+								<li id='rp23'>não concordo nem discordo</li>
+								<li id='rp24'>discordo parcialmente</li>
+								<li id='rp25'>discordo totalmente</li>
+							</ul>
+							<div style="height:60px;display:block;width:100%"></div>
+							<div class="query">
+								Tem o hábito de fazer reports escritos das reuniões?
+							</div>
+
+							<div class="blocobotao"  style="top:150px" id="group3" onclick="mudaCheck(this)">
+								<input id="Fgroup3" name="Fgroup3" type="hidden" value='0'>
+								<div id="rep3" class="switch desligado"></div>
+							</div>
+
+							<div style="height:60px;display:block;width:100%"></div>
+							<div class="query">
+								Costuma comer coelhinhos de chocolate?
+							</div>
+
+							<div class="blocobotao"  style="top:210px" id="group4" onclick="mudaCheck(this)">
+								<input id="Fgroup4" name="Fgroup4" type="hidden" value='0'>
+								<div id="rep4" class="switch desligado"></div>
+							</div>
+
+							<div style="height:60px;display:block;width:100%"></div>
+							<div class="query">
+								Qual a extensão da primeira maratona realizada na Grécia (em metros)?
+							</div>
+							<div class="selcont">
+								<div class="seldown">V</div>
+								<select name="Fgroup5" id="group5" class="selectbx" onchange="veselect(this)">
+									<option value="0">Escolha o valor correto...</option>
+									<option value="1">15000</option>
+									<option value="2">20000</option>
+									<option value="3">38000</option>
+									<option value="4">42000</option>
+								</select>
+							</div>
+
+							<div style="height:10px;display:block;width:100%"></div>
+							<div class="query">
+								Ordene as imagem de acordo com a importância que têm para si.
+							</div>
+							<div class="obs">desloque com o cursor ou o dedo para a direita; uma imagem em cada quadrado; pode igualmente arrastar para cima e para baixo, trocando a ordem.</div>
+							<div class="boximagens">
+									<div class="inner_box">
+										<div class="img_block">
+											<div id="org1" ondrop="drop(event)" ondragover="allowDrop(event)">
+												<img id="img1" src='img/data/beer.png' draggable="true"  ondragstart="drag(event)">
+											</div>
+										</div>
+										<div class="img_block">
+											<div id="org2" ondrop="drop(event)" ondragover="allowDrop(event)">
+												<img id="img2" src='img/data/sol.png' draggable="true" ondragstart="drag(event)">
+											</div>
+										</div>
+										<div class="img_block">
+											<div id="org3" ondrop="drop(event)" ondragover="allowDrop(event)">
+												<img id="img3" src='img/data/hearth.png' draggable="true" ondragstart="drag(event)">
+											</div>
+										</div>
+									
+									</div>
+									<div class="inner_box">
+										<div class="img_block">
+											<div class="order_block">1</div>
+											 <div id="dest1"  class="destimg"  ondrop="drop(event,'Fgroup6')" ondragover="allowDrop(event)"> </div>
+										</div>
+										<div class="img_block">
+											<div class="order_block">2</div>
+											 <div id="dest2"  class="destimg" ondrop="drop(event,'Fgroup6')" ondragover="allowDrop(event)"> </div>
+										</div>
+										<div class="img_block">
+											<div class="order_block">3</div>
+											<div id="dest3"  class="destimg" ondrop="drop(event,'Fgroup6')" ondragover="allowDrop(event)"> </div>
+										</div>
+									
+									</div>
+							</div>
+
+					</section>
+					<section>
+					  <!--
+			          	Preenche os input fields
+			          	Os ID selectors dos campos são identificados pelo grupo de perguntas a
+			          	que respeitam precedido de um F (de form)
+					  -->
+					  	<input type="hidden" id="Fgroup1" value='' name="Fgroup1">
+					  	<input type="hidden" id="Fgroup2" value='' name="Fgroup2">
+					  	<input type="hidden" id="Fgroup5" value='' name="Fgroup5">
+					  	<input type="hidden" id="Fgroup6" value='' name="Fgroup6">
+
+					</section>
+				</form>
+			<div class="button" id="b_qr001" onclick='post_data(this,false)'>continuar</div>
+			<!-- pag 1 fim -->
