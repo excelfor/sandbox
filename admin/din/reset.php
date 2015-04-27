@@ -19,7 +19,7 @@ if (!mysqli_query($con,$sql)){
 	}
  /* user type 99 => todos os privilégios || Aviso: pode criar inconsistências na BD */
  $sql="INSERT into users (name,email,telef,entity_id,department_id,user_type,loginid,pass,status,hidden,created,modified) 
-	   VALUES ('Admn. Sistema','geral@excelformacao.pt',' ','1','1','99','admin','admin!123','1','1','$now','$now')";
+	   VALUES ('Admn. Sistema','geral@excelformacao.pt',' ','1','1','1','admin','admin!123','1','1','$now','$now')";
  mysqli_query($con,$sql) or die('Erro: ' . mysqli_error($con));
  
  $sql="INSERT into departments (entity_id,name,hidden,created,modified) VALUES ('1','Gestão do Sistema','1','$now','$now')" ;

@@ -224,7 +224,7 @@ DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_general_ci;
 
 INSERT INTO `users` (`id`, `name`, `email`, `telef`, `entity_id`, `department_id`, `user_type`, `loginid`, `pass`, `hidden`, `status`, `created`, `modified`) VALUES
-(1, 'Admn. Sistema', 'geral@excelformacao.pt', '', 1, 1, 99, 'admin', 'admin!123', 1, 1, '2015-04-24 13:21:55', '2015-04-24 13:21:55');
+(1, 'Admn. Sistema', 'geral@excelformacao.pt', '', 1, 1, 1, 'admin', 'admin!123', 1, 1, '2015-04-24 13:21:55', '2015-04-24 13:21:55');
 
 
 -- -----------------------------------------------------
