@@ -124,7 +124,7 @@ ini_set('display_errors', 1);
 		 			<form id="loginform" method="post" action="din/valida">
 			 			<div class="blinput">
 			 				<label for "logd">O seu login ID</label>
-			 				<input tye="text" name="login_dt" id="logd"  autocomplete="off" maxlength="18" size="18" value=' '>
+			 				<input type="text" name="login_dt" id="logd"  autocomplete="off" maxlength="18" size="18" value=' '>
 			 			</div>
 			 			<div class="blinput">
 			 				<label for "pass">A sua password</label>

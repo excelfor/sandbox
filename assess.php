@@ -54,6 +54,26 @@ window.onload = function () {
 		 	<div id="qr003"></div>
 		 	<!-- bloco de perguntas 4 -->
 		 	<div id="qr004"></div>
+			<!-- bloco de perguntas 5 -->
+		 	<div id="qr005"></div>
+			<!-- bloco de perguntas 6 -->
+		 	<div id="qr006"></div>
+			<!-- bloco de perguntas 7 -->
+		 	<div id="qr007"></div>
+			<!-- bloco de perguntas 8 -->
+		 	<div id="qr008"></div>
+			<!-- bloco de perguntas 9 -->
+		 	<div id="qr009"></div>
+			<!-- bloco de perguntas 10 -->
+		 	<div id="qr010"></div>
+			<!-- bloco de perguntas 11 -->
+		 	<div id="qr011"></div>
+			<!-- bloco de perguntas 12-->
+		 	<div id="qr012"></div>
+			<!-- bloco de perguntas 13 -->
+		 	<div id="qr013"></div>
+			<!-- bloco de perguntas 14 -->
+		 	<div id="qr014"></div>
 	</div>
 	
 	<footer>

@@ -11,9 +11,14 @@ $loginid = str_replace(' ', '', $loginid);
 $senha =  ($_POST['passwd']);
 $loginid = stripslashes ($loginid);
 $loginid = mysqli_real_escape_string($con,$loginid);
+
 $senha = stripslashes ($senha);
 $senha = mysqli_real_escape_string($con,$senha);
-$org   = $_POST['org'];	
+
+//$org = $_POST['org'];
+$org = isset($_POST['org'])?$_POST['org']:'';
+
+
 	if (empty($senha)|| empty($loginid)){
 			 ob_flush();
 			header("Location: ../index?err=1");
@@ -69,7 +74,8 @@ $org   = $_POST['org'];
 					$_SESSION['nome']= $nome;
 					$_SESSION['superv'] = $supernm.'&nbsp;('.$superf.')';
 					$_SESSION['descdep'] = $entnm.'&nbsp;-&nbsp;Área:&nbsp;'.$depart;
-					echo $_SESSION['id_data']=$id; // id da tabela users e departamento
+					//echo $_SESSION['id_data']=$id; // id da tabela users e departamento
+					$_SESSION['id_data']=$id; // id da tabela users e departamento
 					$_SESSION['id_lev'] = $userl; // level para controlo de acessos
 					mysqli_close($con);
 						if ($org !='adm'){

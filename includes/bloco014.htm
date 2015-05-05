@@ -1,0 +1,43 @@
+﻿<!--
+|| ////// Bloco de perguntas #14 ////
+-->
+
+<form name="MyForm" id="form0" action="#" method="Post" style="margin-top:20px">
+					<section >
+							<div class="query">
+								Faço eu prórpio o planeamento  da forma como as coisas devem ser realizadas pela equipa
+							</div>
+							<ul class="multiple" id="group1" onclick="select(event,this)">
+								<li id='rp11'>concordo totalmente</li>
+								<li id='rp12'>concordo parcialmente</li>
+								<li id='rp13'>nao concordo nem discordo</li>
+								<li id='rp14'>discordo parcialmente</li>
+								<li id='rp15'>discordo totalmente</li>
+						     </ul>
+						    
+							<div style="height:60px;display:block;width:100%"></div>
+							<div class="query">
+								Tenho uma visão muito clara para o meu trabalho / projecto / equipa.
+							</div>
+							<ul class="multiple" id="group2" onclick="select(event,this)">
+								<li id='rp21'>concordo totalmente</li>
+								<li id='rp22'>concordo parcialmente</li>
+								<li id='rp23'>nao concordo nem discordo</li>
+								<li id='rp24'>discordo parcialmente</li>
+								<li id='rp25'>discordo totalmente</li>
+							</ul>
+					</section>
+					<section>
+					  <!--
+			          	Preenche os input fields
+			          	Os ID selectors dos campos sao identificados pelo grupo de perguntas a
+			          	que respeitam precedido de um F (de form)
+					  -->
+					  	<input type="hidden" id="Fgroup1" value='' name="Fgroup1">
+					  	<input type="hidden" id="Fgroup2" value='' name="Fgroup2">					  	
+					  	
+
+					</section>
+				</form>
+			<div class="button" id="b_qr014" onclick='post_data(this,true)'>concluir</div>
+			<!-- pag 14 fim -->

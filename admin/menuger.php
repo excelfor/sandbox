@@ -5,7 +5,8 @@ ini_set('display_errors', 1);
 $user 	= $_SESSION['nome'];
 $cp_nm	= $_SESSION['descdep'];
 $above	= $_SESSION['superv'];
-echo $hislev	= $_SESSION['id_lev'];
+//echo $hislev	= $_SESSION['id_lev'];
+$hislev	= $_SESSION['id_lev'];
 $hisid  = $_SESSION['id_data'];
 $res=(isset($_GET['rs']))?true:false;
 ?>

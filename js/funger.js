@@ -173,6 +173,133 @@ function post_data(elem,end){
 				+'&fg3='+document.getElementById('Fgroup3').value
 				+'&fg4='+document.getElementById('Fgroup4').value
 	}
+	else if (fase=='003'){
+		var data='fase=3';
+		   data+='&fg1='+document.getElementById('Fgroup1').value
+				+'&fg2='+document.getElementById('Fgroup2').value
+				+'&fg3='+document.getElementById('Fgroup3').value
+				+'&fg4='+document.getElementById('Fgroup4').value
+				+'&fg5='+document.getElementById('Fgroup5').value
+				+'&fg6='+document.getElementById('Fgroup6').value
+				+'&fg7='+document.getElementById('Fgroup7').value
+				+'&fg8='+document.getElementById('Fgroup8').value
+				+'&fg9='+document.getElementById('Fgroup9').value
+	} else if (fase=='004'){
+		var data='fase=4';
+		   data+='&fg1='+document.getElementById('Fgroup1').value
+				+'&fg2='+document.getElementById('Fgroup2').value
+				+'&fg3='+document.getElementById('Fgroup3').value
+				+'&fg4='+document.getElementById('Fgroup4').value
+				+'&fg5='+document.getElementById('Fgroup5').value
+				+'&fg6='+document.getElementById('Fgroup6').value
+				+'&fg7='+document.getElementById('Fgroup7').value
+				+'&fg8='+document.getElementById('Fgroup8').value
+				+'&fg9='+document.getElementById('Fgroup9').value
+	}  else if (fase=='005'){
+		var data='fase=5';
+		   data+='&fg1='+document.getElementById('Fgroup1').value
+				+'&fg2='+document.getElementById('Fgroup2').value
+				+'&fg3='+document.getElementById('Fgroup3').value
+				+'&fg4='+document.getElementById('Fgroup4').value
+				+'&fg5='+document.getElementById('Fgroup5').value
+				+'&fg6='+document.getElementById('Fgroup6').value
+				+'&fg7='+document.getElementById('Fgroup7').value
+				+'&fg8='+document.getElementById('Fgroup8').value
+				+'&fg9='+document.getElementById('Fgroup9').value
+	} else if (fase=='006'){
+		var data='fase=6';
+		   data+='&fg1='+document.getElementById('Fgroup1').value
+				+'&fg2='+document.getElementById('Fgroup2').value
+				+'&fg3='+document.getElementById('Fgroup3').value
+				+'&fg4='+document.getElementById('Fgroup4').value
+				+'&fg5='+document.getElementById('Fgroup5').value
+				+'&fg6='+document.getElementById('Fgroup6').value
+				+'&fg7='+document.getElementById('Fgroup7').value
+				+'&fg8='+document.getElementById('Fgroup8').value
+				+'&fg9='+document.getElementById('Fgroup9').value
+	} else if (fase=='007'){
+		var data='fase=7';
+		   data+='&fg1='+document.getElementById('Fgroup1').value
+				+'&fg2='+document.getElementById('Fgroup2').value
+				+'&fg3='+document.getElementById('Fgroup3').value
+				+'&fg4='+document.getElementById('Fgroup4').value
+				+'&fg5='+document.getElementById('Fgroup5').value
+				+'&fg6='+document.getElementById('Fgroup6').value
+				+'&fg7='+document.getElementById('Fgroup7').value
+				+'&fg8='+document.getElementById('Fgroup8').value
+				+'&fg9='+document.getElementById('Fgroup9').value
+	} else if (fase=='008'){
+		var data='fase=8';
+		   data+='&fg1='+document.getElementById('Fgroup1').value
+				+'&fg2='+document.getElementById('Fgroup2').value
+				+'&fg3='+document.getElementById('Fgroup3').value
+				+'&fg4='+document.getElementById('Fgroup4').value
+				+'&fg5='+document.getElementById('Fgroup5').value
+				+'&fg6='+document.getElementById('Fgroup6').value
+				+'&fg7='+document.getElementById('Fgroup7').value
+				+'&fg8='+document.getElementById('Fgroup8').value
+				+'&fg9='+document.getElementById('Fgroup9').value
+	} else if (fase=='009'){
+		var data='fase=9';
+		   data+='&fg1='+document.getElementById('Fgroup1').value
+				+'&fg2='+document.getElementById('Fgroup2').value
+				+'&fg3='+document.getElementById('Fgroup3').value
+				+'&fg4='+document.getElementById('Fgroup4').value
+				+'&fg5='+document.getElementById('Fgroup5').value
+				+'&fg6='+document.getElementById('Fgroup6').value
+				+'&fg7='+document.getElementById('Fgroup7').value
+				+'&fg8='+document.getElementById('Fgroup8').value
+				+'&fg9='+document.getElementById('Fgroup9').value
+	} else if (fase=='010'){
+		var data='fase=10';
+		   data+='&fg1='+document.getElementById('Fgroup1').value
+				+'&fg2='+document.getElementById('Fgroup2').value
+				+'&fg3='+document.getElementById('Fgroup3').value
+				+'&fg4='+document.getElementById('Fgroup4').value
+				+'&fg5='+document.getElementById('Fgroup5').value
+				+'&fg6='+document.getElementById('Fgroup6').value
+				+'&fg7='+document.getElementById('Fgroup7').value
+				+'&fg8='+document.getElementById('Fgroup8').value
+				+'&fg9='+document.getElementById('Fgroup9').value
+	} else if (fase=='011'){
+		var data='fase=11';
+		   data+='&fg1='+document.getElementById('Fgroup1').value
+				+'&fg2='+document.getElementById('Fgroup2').value
+				+'&fg3='+document.getElementById('Fgroup3').value
+				+'&fg4='+document.getElementById('Fgroup4').value
+				+'&fg5='+document.getElementById('Fgroup5').value
+				+'&fg6='+document.getElementById('Fgroup6').value
+				+'&fg7='+document.getElementById('Fgroup7').value
+				+'&fg8='+document.getElementById('Fgroup8').value
+				+'&fg9='+document.getElementById('Fgroup9').value
+	} else if (fase=='012'){
+		var data='fase=12';
+		   data+='&fg1='+document.getElementById('Fgroup1').value
+				+'&fg2='+document.getElementById('Fgroup2').value
+				+'&fg3='+document.getElementById('Fgroup3').value
+				+'&fg4='+document.getElementById('Fgroup4').value
+				+'&fg5='+document.getElementById('Fgroup5').value
+				+'&fg6='+document.getElementById('Fgroup6').value
+				+'&fg7='+document.getElementById('Fgroup7').value
+				+'&fg8='+document.getElementById('Fgroup8').value
+				+'&fg9='+document.getElementById('Fgroup9').value
+	} else if (fase=='013'){
+		var data='fase=13';
+		   data+='&fg1='+document.getElementById('Fgroup1').value
+				+'&fg2='+document.getElementById('Fgroup2').value
+				+'&fg3='+document.getElementById('Fgroup3').value
+				+'&fg4='+document.getElementById('Fgroup4').value
+				+'&fg5='+document.getElementById('Fgroup5').value
+				+'&fg6='+document.getElementById('Fgroup6').value
+				+'&fg7='+document.getElementById('Fgroup7').value
+				+'&fg8='+document.getElementById('Fgroup8').value
+				+'&fg9='+document.getElementById('Fgroup9').value
+	} else if (fase=='014'){
+		var data='fase=14';
+		   data+='&fg1='+document.getElementById('Fgroup1').value
+				+'&fg2='+document.getElementById('Fgroup2').value
+				
+	}
 
    var url = dir+"/din/gereresp.php?";
    		try{ 
@@ -196,9 +323,9 @@ function post_data(elem,end){
 								var incr = parseInt(fase)+1;
 								incr= ("00" + incr).slice(-3);
 							  	loadblock('bloco'+incr,'qr'+incr);
-							  }  else {
+						}  else {
 							  	window.location.href='answers.php';
-							  }
+						}
 				  } else if(resp==='ERR') {
 				  		mess.innerHTML="Preencha as respostas!";
 				  		warn.style.visibility='visible';

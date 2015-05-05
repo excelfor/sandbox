@@ -9,7 +9,7 @@
 /* local */
 $DB_HOST="localhost";
 $DB_USERNAME="root";
-$DB_PASSWORD="root";
+$DB_PASSWORD="";
 $DB_NAME="excelforDev";
 $entity_id=1; // a mudar dinamicamente
 
