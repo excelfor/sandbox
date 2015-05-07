@@ -75,7 +75,10 @@ $org = isset($_POST['org'])?$_POST['org']:'';
 					$_SESSION['superv'] = $supernm.'&nbsp;('.$superf.')';
 					$_SESSION['descdep'] = $entnm.'&nbsp;-&nbsp;Área:&nbsp;'.$depart;
 <<<<<<< HEAD
+<<<<<<< HEAD
 					//echo $_SESSION['id_data']=$id; // id da tabela users e departamento
+=======
+>>>>>>> 0a5b8cded17479e8d99ef5169aab2c0b8b252330
 =======
 >>>>>>> 0a5b8cded17479e8d99ef5169aab2c0b8b252330
 					$_SESSION['id_data']=$id; // id da tabela users e departamento
