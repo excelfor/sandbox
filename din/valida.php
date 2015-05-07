@@ -74,7 +74,10 @@ $org = isset($_POST['org'])?$_POST['org']:'';
 					$_SESSION['nome']= $nome;
 					$_SESSION['superv'] = $supernm.'&nbsp;('.$superf.')';
 					$_SESSION['descdep'] = $entnm.'&nbsp;-&nbsp;Área:&nbsp;'.$depart;
+<<<<<<< HEAD
 					//echo $_SESSION['id_data']=$id; // id da tabela users e departamento
+=======
+>>>>>>> 0a5b8cded17479e8d99ef5169aab2c0b8b252330
 					$_SESSION['id_data']=$id; // id da tabela users e departamento
 					$_SESSION['id_lev'] = $userl; // level para controlo de acessos
 					mysqli_close($con);
@@ -83,7 +86,7 @@ $org = isset($_POST['org'])?$_POST['org']:'';
 							header("Location: ../assess");
 						} else{
 							 ob_flush();
-						 	header("Location: ../admin/menuger");
+							header("Location: ../admin/menuger");
 						}
 					ob_flush();
 					exit;
